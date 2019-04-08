@@ -59,9 +59,18 @@ const scaleXPos = d3.scaleBand()
 .range([0, width]);
 
 
+ // gridlines in y axis function
+ function gridlines() {		
+    return d3.axisLeft(scaleYPos)
+        
+  }
 svg.append("g")
   .attr("class", "grid")
-  
+  .call(gridlines()
+      .tickSize(-width)
+      .tickFormat('')
+      )
+      
       
 //bars
 

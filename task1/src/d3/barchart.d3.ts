@@ -146,3 +146,26 @@ axisGroup
   .attr("dx", "-.9em")
   .attr("dy", "-.40em")
   .style("text-anchor", "end");
+
+
+//add Labels
+svg.append("text")
+  .attr("x", -(height/3) - margin)
+  .attr("y", margin/ -1.5)
+  .attr('transform', 'rotate(-90)')
+    .attr('text-anchor', 'middle')
+    .text('Temperatures (ºC)')
+
+svg.append('text')
+.attr('x', width / 3 + margin)
+.attr('y', 450)
+.attr('text-anchor', 'middle')
+.text('Months')
+
+svg.append('text')
+    .attr('x', width / 2.5 + margin)
+    .attr('y', -20)
+    .attr('text-anchor', 'middle')
+    .text('The average temperature of Málaga')
+
+

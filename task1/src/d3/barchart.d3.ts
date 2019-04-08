@@ -43,3 +43,12 @@ const svg = card
     .attr("height", "100%")
     .attr("viewBox", `${-padding} ${-padding} ${width + 2*padding} ${height + 2*padding}`);
     
+
+const scaleYPos = d3.scaleLinear()
+.domain([d3.min(avgTempp, function(d,i){return d.Temp -6}),d3.max(avgTempp, function(d,i){return d.Temp +3}) ])
+.range([height,0]);
+
+
+const scaleXPos = d3.scaleBand()
+.domain(avgTempp.map(function(d){return d.Month}))
+.range([0, width]);

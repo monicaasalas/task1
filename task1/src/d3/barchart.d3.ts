@@ -169,3 +169,37 @@ svg.append('text')
     .text('The average temperature of Málaga')
 
 
+
+
+  //Add a legend
+  var color = d3.scaleOrdinal()
+  .range(COLORS);
+  var legspacing = 25;
+
+  var legend = svg.selectAll(".legend")
+      .data(VALUES)
+      .enter()
+      .append("g")
+
+  legend.append("rect")
+  
+      .attr("fill", function(d,i){
+        return color(i)
+     })
+      .attr("width", 15)
+      .attr("height", 15)
+      .attr("y", function (d, i) {
+          return i * legspacing - 14;
+      })
+      .attr("x", 505);
+
+  legend.append("text")
+      .attr("class", "label")
+      .attr("y", function (d, i) {
+          return i * legspacing - 0.5;
+      })
+      .attr("x", 521)
+      .attr("text-anchor", "start")
+      .text(function (d, i) {
+          return LABELS[i];
+      });

@@ -8,5 +8,5 @@ D3.js (Data Driven Documents) is not a programming language. It is a JavaScript 
 
 <H2>Installation</H2>
 
-You need to download the entire repository, which gives you not only the JavaScript files but also all the source code of the components. Once you have the downloaded repository, we will verify that we have installed node. Next, we install the dependencies in the local folder node_modules with the command <b> npm-install </ b>.
-To run the script defined in the package.json, we must do <b> npm install </ b>.
+You need to download the entire repository, which gives you not only the JavaScript files but also all the source code of the components. Once you have the downloaded repository, we will verify that we have installed node. Next, we install the dependencies in the local folder node_modules with the command <b> npm-install </b>.
+To run the script defined in the package.json, we must do <b> npm install </b>.

@@ -70,6 +70,7 @@ svg.append("g")
       .tickSize(-width)
       .tickFormat('')
       )
+
       
       
 //bars
